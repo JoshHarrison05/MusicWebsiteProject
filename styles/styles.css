@@ -1,0 +1,146 @@
+/* Navigation Bar */
+nav {
+    background-color: rgba(255, 111, 97, 0.8); /* Semi-transparent */
+    backdrop-filter: blur(10px); /* Glass effect */
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero Section */
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/WebsiteBackground.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+/* Trending Albums Section */
+.trending {
+    padding: 20px;
+    text-align: center;
+}
+
+.album-grid {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+    min-width: 100%; /* Ensure the container is wide enough */
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+.album-card {
+    flex: 0 0 auto; /* Prevent flex items from shrinking */
+    width: 200px; /* Fixed width for each card */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.album-card:hover {
+    transform: translateY(-10px);
+}
+
+.album-card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.album-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+}
+
+.album-card p {
+    font-size: 1rem;
+    color: #555;
+}
+/* Stats Section */
+.stats-section {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.stats-container {
+    column-count: 3; /* Always shows 3 columns */
+    column-gap: 20px;
+    padding: 10px;
+}
+
+.stat-card {
+    display: inline-block;
+    width: 100%;
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    break-inside: avoid; /* Prevents card splitting across columns */
+}
+
+.stat-card h3 {
+    color: white;
+    margin: 0 0 15px 0;
+    font-size: 1.2rem;
+}
+
+.stat-card table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.stat-card th {
+    background: #00ccff;
+    color: white;
+    padding: 8px;
+    text-align: center;
+}
+
+.stat-card td {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.stat-card tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
